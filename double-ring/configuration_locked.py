@@ -18,7 +18,7 @@ except:
 	sys.exit()
 
 #charge?
-#分子坐标 n表示每个圆环中的beeds数  这里我们考虑在z平面扩展成圆环 sig为原子直径
+
 def Molecule(Coor,sig,n):
 	i=1
 	MoleXYZ=[]
@@ -37,8 +37,7 @@ def Molecule(Coor,sig,n):
 		i+=1
 	return MoleXYZ
 
-# 晶格构建 nac为配位数 eta（packing fraction）
-# 晶格构建 nac为配位数 eta（packing fraction）
+
 def Lattice(nac,ncx,ncy,ncz,Vmol,eta,lds):
 	global nPart
 
@@ -250,7 +249,7 @@ if __name__ == '__main__':
 	
 	
 	print ("#### [5] Creating tables for Bonds and Angles ####")
-	i=1;iMole=0;iAtom=0   #i 表示bond number
+	i=1;iMole=0;iAtom=0   #i --- bond number
 	while iMole < MolNum:
 		for iAtom in range (0,int(nMole)):
 			BondType=1
