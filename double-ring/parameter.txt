@@ -1,0 +1,18 @@
+# This file contains parameters needed for generating configuration
+
+Diameter				1
+beeds_number			28
+Atom_Type_mass				1 1
+Packing_fraction				0.01
+Lattice_Parameter				1 3 3 3
+Lattice_Relax					2
+
+
+# Specifying potential
+Accuracy		500		
+rcut 			5.0
+Angle_Type		1
+angle_parameter		harmonic 100	167.15
+Pair			mie/cut	 2.5 1.0 50.0 49.0
+Bond_Type		1
+bond_parameter		harmonic 100	1.00
