@@ -1,4 +1,3 @@
-#环境配制等前期工作
 import os, sys, math
 import numpy as np
 
@@ -92,7 +91,7 @@ def Lattice(nac,ncx,ncy,ncz,Vmol,eta,lds):
 	l = (nPart*Vmol/lbox[1]/lbox[2]/eta)**(1.0/3.0)
 	print ("#### The dimensions of the lattice created are (x/y/z):", lbox[0]*l,lbox[1]*l,lbox[2]*l)
 
-	print ("#### creating fcc/hcp lattice for your system, please wait.... ####")
+	print ("#### creating lattice for your system, please wait.... ####")
 	i=0
 	rPart = []
 	
@@ -116,7 +115,7 @@ def Lattice(nac,ncx,ncy,ncz,Vmol,eta,lds):
 
 	return rPart
 
-#参数导入
+
 if __name__ == '__main__':
 	if len(sys.argv)==1:
 		print (__doc__)
